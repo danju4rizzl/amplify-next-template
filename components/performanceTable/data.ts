@@ -1,12 +1,15 @@
 import { PerformanceDataItem } from '@/helpers/types'
-
+/**
+ * @todo Clean the data types to replace it with real data from a database
+ * @type Deejay also crosscheck the types
+ */
 export const demoPerformanceData: PerformanceDataItem[] = [
   {
     measure: 'Machine efficiency',
-    unit: '%',
+    unit: 9.1,
     target: 90,
     weight: 20,
-    machineOutput: 0,
+    machineOutput: '',
     Jan: 84,
     Feb: 93,
     Apr: 71,
@@ -17,10 +20,10 @@ export const demoPerformanceData: PerformanceDataItem[] = [
   },
   {
     measure: 'Actual quantity',
-    unit: 'units',
+    unit: 22,
     target: 95,
     weight: 20,
-    machineOutput: 10,
+    machineOutput: 'Quantity',
     Jan: 83,
     Feb: 72,
     Apr: 84,
@@ -31,10 +34,10 @@ export const demoPerformanceData: PerformanceDataItem[] = [
   },
   {
     measure: 'Consumer complaints',
-    unit: 'No.',
+    unit: 6,
     target: 0.5,
     weight: 10,
-    machineOutput: 1.0,
+    machineOutput: '',
     Jan: 0.7,
     Feb: 0.6,
     Apr: 1.2,
@@ -45,10 +48,10 @@ export const demoPerformanceData: PerformanceDataItem[] = [
   },
   {
     measure: 'Waste',
-    unit: '%',
+    unit: 10,
     target: 0.5,
     weight: 10,
-    machineOutput: 1.0,
+    machineOutput: 'House keeping',
     Jan: 0.4,
     Feb: 0.8,
     Apr: 1.2,
@@ -59,10 +62,10 @@ export const demoPerformanceData: PerformanceDataItem[] = [
   },
   {
     measure: 'Cleanliness',
-    unit: '%',
+    unit: 5.4,
     target: 60,
     weight: 10,
-    machineOutput: 0,
+    machineOutput: '',
     Jan: 61,
     Feb: 28,
     Apr: 41,
